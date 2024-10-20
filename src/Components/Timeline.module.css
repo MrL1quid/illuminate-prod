@@ -1,0 +1,38 @@
+.timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.timeline h1{
+    width: auto;
+    margin-left: 15%;
+    margin-right: auto;
+    margin-bottom: 4vh;
+    text-align: start;
+    font-weight: 300;
+    font-size: 7vh;
+}
+
+.timeline > div{
+    position: relative;
+    margin-left: 21%;
+    width: 70%;
+}
+.timeline > div::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-left: 3px solid #000;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1200px) {    
+    .timeline > div{
+        width: 100%;
+        margin-left: 11%;
+    }
+}

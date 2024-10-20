@@ -1,0 +1,9 @@
+.nav{
+    width: fit-content;
+    margin: auto;
+}
+
+.nav p{
+    font-size: 4vh;
+    color: #fff;
+}

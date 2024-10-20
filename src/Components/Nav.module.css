@@ -1,0 +1,59 @@
+.nav{
+    position: relative;
+    background: none;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: #000;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    transition: .15s all;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.nav p{
+    font-size: 2.4vh;
+    margin: auto;
+    padding: .4vh .8vh;
+    position: relative;
+    z-index: 2;
+    font-weight: 300;
+    height: 100%;
+    animation: color-fade 2s;
+    transition: .2s all;
+    width: max-content;
+    display: flex;
+    align-items: center;
+}
+.nav:hover p, .active p{
+    color: #fff;
+}
+
+.bg1, .bg2{
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #000;
+    transition: .125s all;
+    transition: .2s all;
+}
+.bg1{
+    left: 50%;
+}
+.bg2{
+    right: 50%;
+}
+
+
+.nav:hover .bg1, .nav:hover .bg2, .active .bg1, .active .bg2{
+    width: 50%;
+}
+
+@keyframes color-fade {
+    0%{
+        color: #fff;
+    }
+}

@@ -1,0 +1,108 @@
+.page{
+    display: flex;
+    padding: 15vh 10vw 0 7vw;
+    align-items: start;
+    justify-content: space-between;
+    min-height: 89.1vh;
+    max-width: 100%;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    
+}
+
+.page > *{
+    box-sizing: border-box;
+    max-width: 50%;
+    min-width: 35%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 43%;
+    background-color: #fff;
+    padding: 3vh 6vh;
+    border-radius: 2vh;
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.75);
+}
+
+.form h2{
+    font-size: 4vh;
+    font-weight: 300;
+    margin-bottom: 7vh;
+}
+
+.form input, .form textarea{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #111;
+    font-size: 2.3vh;
+    margin: 2vh 0;
+    width: 80%;
+    resize: none;
+    background: transparent;
+}
+
+.form button{
+    border: 1px solid #111;
+    border-radius: 6vh;
+    font-size: 2.7vh;
+    padding: .5vh 3.5vh;
+    cursor: pointer;
+    transition: .15s all;
+    user-select: none;
+    margin-top: 3vh;
+    background-color: #111;
+    color: #f0f0f0;
+}
+
+.form button:hover{
+    background-color: #f0f0f0;
+    color: #111;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.contactInfo h1 {
+    margin-bottom: 7vh;
+    font-size: 6vh;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 900px) {    
+    .page{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+        padding-top: 5vh;
+        width: 100%;
+    }
+    .page > *{
+        max-width: 100%;
+        width: 80%;
+        align-items: center;
+    }
+    
+    .form input, .form textarea{
+        width: 100%;
+    }
+    
+    .contactInfo{
+        margin-bottom: 15vh;
+        margin-top: 0;
+    }
+    
+    .form{
+        margin-bottom: 12vh;
+        padding: 3vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {    
+    
+}

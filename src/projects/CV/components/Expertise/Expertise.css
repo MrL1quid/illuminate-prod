@@ -1,0 +1,35 @@
+.expContainer .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+.expContainer .item .subItemL {
+  max-width: 15%;
+}
+.expContainer .item .subItemL .title {
+  color: #222935;
+  font-weight: 900;
+}
+.expContainer .item .subItemL .date {
+  color: #667081;
+}
+.expContainer .item .subItemR {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.expContainer .item .subItemR .title {
+  color: #222935;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 900px) {
+  .expContainer .item .subItemL {
+    width: 30%;
+  }
+  .expContainer .item .subItemR {
+    width: 70%;
+  }
+}/*# sourceMappingURL=Expertise.css.map */

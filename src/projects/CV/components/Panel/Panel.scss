@@ -1,0 +1,55 @@
+.panel {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    transition: all 0.3s;
+    div {
+        position: relative;
+    }
+}
+.panel-content {
+    background-color: $dark-grey;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .photobox-holder {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-top: 5%;
+        padding-right: 5%;
+    }
+    .back-btn-holder {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+.disabled {
+    transform: translateX(-85%);
+}
+.panel-close-btn {
+    width: 15%;
+    .btn-panel {
+        position: relative;
+        top: 20px;
+        left: -5px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .panel-content {
+        .back-btn-holder {
+            padding-right: 0;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .panel {
+        width: 60px;
+    }
+}

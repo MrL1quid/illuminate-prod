@@ -1,0 +1,17 @@
+.subpage p{
+    padding-left: 0;
+}
+
+.subpage > img{
+    width: auto;
+    height: 60vh;
+    max-height: 80vh !important;
+    margin-left: 5%;
+    filter: contrast(.9) saturate(1.5) sepia(.2) brightness(1.05);
+    margin-bottom: 3%;
+    box-shadow: inset 0px 0px 25px 36px rgba(255,255,255,1);
+}
+
+@media only screen and (max-width: 1200px){
+
+}

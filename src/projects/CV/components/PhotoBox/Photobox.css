@@ -1,0 +1,29 @@
+.photobox {
+  text-align: center;
+  font-family: sans-serif;
+}
+.photobox .avatar {
+  width: 100px;
+  padding-bottom: 5px;
+}
+.photobox .name {
+  font-size: 16px;
+}
+
+.home {
+  color: white;
+  margin-bottom: 20px;
+  max-width: 40%;
+}
+.home .title {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .photobox .avatar {
+    width: 40px;
+  }
+  .photobox .name {
+    display: none;
+  }
+}/*# sourceMappingURL=Photobox.css.map */

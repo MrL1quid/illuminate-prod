@@ -1,0 +1,79 @@
+.page{
+    color: #fff;
+    display: flex;
+    color: #eee;
+}
+.page::before{
+    content: '';
+    top: 0;
+    bottom: 0;
+    display: block;
+    background-color: red;
+}
+.page > div{
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.page > div:nth-child(1){
+    width: 40vw;
+}
+.page > div:nth-child(2){
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    height: 100%;
+    width: 60vw;
+}
+
+.page > div:nth-child(2) h1{
+    margin-bottom: 2vh;
+}
+.page>div>h1{
+    font-weight: 200;
+}
+.page>div>h2{
+    font-weight: 300;
+    font-size: 4vh;
+    color: rgb(0, 182, 121);
+
+}
+
+.img-holder{
+    margin: 4vh auto;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.img-holder > img{
+    height: 100%;
+    object-fit: contain;
+}
+
+.page button{
+    border: 1px solid #0077B5;
+    color: #0077B5;
+    padding: 5px 10px;
+    margin-top: 1lh;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.8vh;
+    font-weight: 600;
+    transition: .15s all;
+}
+
+.page button:hover{
+    color: #fff;
+    background-color: #0077B5;
+}
+
+.reservations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

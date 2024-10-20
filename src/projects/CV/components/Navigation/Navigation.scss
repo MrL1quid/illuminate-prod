@@ -1,0 +1,43 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .item {
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+        transition: all 0.1s;
+        font-size: 16px;
+        color: #667081;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 4%;
+        .spaceholder {
+            width: 20%;
+        }
+    }
+    .active{
+        color: $green-primary;
+    }
+}
+
+.nav .item:hover {
+    color: $green-primary;
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        display: flex;
+        justify-content: space-evenly;
+        height: 100%;
+        .item {
+            justify-content: center;
+            .text,
+            .spaceholder {
+                display: none;
+            }
+        }
+    }
+}

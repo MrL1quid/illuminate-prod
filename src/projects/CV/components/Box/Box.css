@@ -1,0 +1,7 @@
+.box {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 20px 0 50px 0;
+}/*# sourceMappingURL=Box.css.map */

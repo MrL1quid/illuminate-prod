@@ -1,0 +1,34 @@
+.mainApp * {
+  font-family: "Raleway", sans-serif;
+}
+
+.mainApp {
+  margin: 0;
+  padding: 0;
+  margin-top: 4vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media only screen and (max-width: 1200px) {
+  .mainApp {
+    margin-top: 7vh;
+  }
+}

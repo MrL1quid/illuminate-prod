@@ -1,0 +1,46 @@
+.card {
+    display: flex;
+    width: 80%;
+    background-color: #111;
+    padding: 10px;
+    margin: 1vh auto;
+}
+.img-holder {
+    width: 30%;
+    overflow: hidden;
+}
+.img-holder img {
+    width: 100%;
+    object-fit: contain;
+}
+.card .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+.card .content button{
+    border: 1px solid rgb(232, 90, 59);
+    color: rgb(232, 90, 59);
+    padding: 5px 10px;
+    margin-top: 1lh;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.8vh;
+    font-weight: 600;
+    transition: .15s all;
+}
+
+.card .content button:hover{
+    color: #fff;
+    background-color: rgb(232, 90, 59);
+}
+
+.content h2{
+    font-weight: 300;
+    margin-bottom: 2vh;
+}
+.content p{
+    font-weight: 200;
+}

@@ -1,0 +1,17 @@
+#Feedback{
+    padding-bottom: 50px;
+    .feed-item {
+        margin: 30px 0;
+        .review-user-holder {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            img {
+                margin-right: 10px;
+            }
+            a {
+                color: $green-primary !important;
+            }
+        }
+    }   
+}

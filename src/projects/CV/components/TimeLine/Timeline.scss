@@ -1,0 +1,58 @@
+.timeline {
+    overflow: hidden;
+    margin: 50px 0;
+    .dataHolder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .icon {
+            color: $green-primary;
+        }
+        .err {
+            color: #FF1A17;
+        }
+    }
+    .item {
+        display: flex;
+        margin: 0;
+        position: relative;
+        min-width: 100%;
+        max-width: 100%;
+        .date-holder {
+            padding: 15px;
+            display: flex;
+            height: 16px;
+            background-color: #fff;
+            p {
+                font-size: 16px;
+            }
+        }
+        &:before {
+            background-color: $green-primary;
+            width: 4px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            content: "";
+            margin-left: 32px;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .info {
+            width: 100%;
+            &:after {
+                content: "";
+                position: absolute;
+                top: 14px;
+                left: 56px;
+                width: 0;
+                height: 0;
+                border-top: solid 10px transparent;
+                border-bottom: solid 10px transparent;
+                border-right: solid 10px #eee;
+            }
+        }
+    }
+}

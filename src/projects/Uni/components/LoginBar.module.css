@@ -1,0 +1,22 @@
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 12px;
+    width: auto;
+    max-width: 90%;
+    font-size: 2vh;
+    color: #fff;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: all .1s;
+}
+
+.bar:hover{
+    filter: brightness(.8);
+}
+
+.bar > p{
+    margin-left: 1lh;
+}

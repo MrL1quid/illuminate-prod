@@ -1,0 +1,158 @@
+.page {
+  display: flex;
+  height: 94vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.page > h1 {
+  font-size: 3.9vh;
+  font-weight: 300;
+  margin-top: 8vh;
+  margin-bottom: 6vh;
+  color: #cea800;
+  text-align: center;
+}
+
+.info-holder {
+  width: auto;
+  margin: 2vh auto 7vh auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-holder div {
+  margin: 2vh auto;
+}
+.info-holder button:hover p {
+  color: #ccc;
+}
+.info-holder button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: auto 1vw;
+  cursor: pointer;
+  font-size: 4vh;
+  color: #fff;
+}
+
+.form-holder {
+  width: 50vw;
+  margin: 0 auto;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  justify-content: flex-start;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  color: #eee;
+  text-align: center;
+  padding: 2%;
+  width: 80%;
+}
+
+.form > input {
+  width: 60%;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 2vh;
+  margin-bottom: 3vh;
+}
+.form > button {
+  border: 1px solid #cea800;
+  color: #cea800;
+  padding: 10px 20px;
+  margin-top: 1lh;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.15s all;
+  font-size: 2.2vh;
+}
+.form > button:hover {
+  color: #333;
+  background-color: #cea800;
+}
+
+.check-holder {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  font-size: 1.8vh;
+}
+
+.check-holder > input {
+  position: absolute;
+  opacity: 1;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+}
+.check-holder > span {
+  position: absolute;
+  top: 0;
+  left: -1lh;
+  height: 1lh;
+  width: 1lh;
+  background-color: #eee;
+}
+.check-holder:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.check-holder input:checked ~ .checkmark {
+  background-color: #cea800;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check-holder input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check-holder .checkmark:after {
+  left: 0.35lh;
+  top: 0.15lh;
+  width: 0.5vh;
+  height: 1vh;
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.check-holder > p {
+  margin-left: 10px;
+}
+
+@media (max-width: 1024px) {
+  .form-holder {
+    width: 100vw;
+    background-color: transparent;
+  }
+  .image-holder {
+    width: 100vw;
+    filter: brightness(0.1);
+  }
+}

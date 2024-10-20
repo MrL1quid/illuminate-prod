@@ -1,0 +1,24 @@
+.contact{
+    margin: 50px 0;
+    .item{
+        display: flex;
+        margin: 20px 0;
+        .icon-holder{
+            margin-right: 20px;
+        }
+        .description{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .title{
+                color: #222935;
+                font-weight: 900;
+                margin: 0;
+            }
+            .info{
+                color: #667081;
+            }
+
+        }
+    }
+}

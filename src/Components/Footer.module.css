@@ -1,0 +1,72 @@
+.footer{
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 4vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer h3{
+    font-weight: 400;
+    font-size: 3vh;
+    margin-bottom: 1vh;
+}
+
+.fnav{
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer div > a {
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 1.7vh;
+    cursor: pointer;
+    margin: auto 1vh;
+}
+
+a.active {
+    color: #999 !important;
+}
+
+.logo-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-holder button{
+    background-color: #333;
+    border: 0;
+    border-radius: 2.2vh;
+    font-size: 2.2vh;
+    padding: 1vh;
+    color: #fff;
+    cursor: pointer;
+    margin: auto .5vh;
+}
+
+.logo-holder button > *{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+@media only screen and (max-width: 900px) {    
+    .footer{
+        max-width: 100%;
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 768px) {    
+    
+
+}
