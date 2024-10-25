@@ -27,7 +27,8 @@
     color: #eee;
     padding: 2%;
     text-align: center;
-    width: 80%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .form>p{
@@ -75,7 +76,7 @@
 
 .image-holder{
     width: 50%;
-    height: 100vh;
+    height: 94vh;
     position: absolute;
     right: 0;
     top: 0;
@@ -90,9 +91,12 @@
 
 
 @media (max-width: 1024px) {
+    .page{
+        height: auto;
+    }
     .form-holder{
         top: 6vh;
-        height: 94vh;
+        height: fit-content;
         width: 100vw;
         background-color: transparent;
     }

@@ -22,6 +22,7 @@ const Footer = () => {
         <Link to={"/projects"} className={location.pathname === '/projects' ? styles.active : ''}>PROJECTS</Link>
         <Link to={"/contact"} className={location.pathname === '/contact' ? styles.active : ''}>CONTACT</Link>
       </div>
+      <p>&copy; Soluor - All rights reserved.</p>
     </div>
   );
 };
