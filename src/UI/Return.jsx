@@ -3,7 +3,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const Scroll = () => {
-    return (<Link className={styles.elem} to='/'>
+      return (<Link className={styles.elem} to='/' onClick={window.scrollTo({top: 0})}>
       <IoIosArrowBack />
     </Link>
   );

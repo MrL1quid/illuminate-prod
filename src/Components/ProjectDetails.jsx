@@ -19,6 +19,7 @@ const ProjectDetails = ({ disableFunc, data, active }) => {
     if (data.webData.type === "LINK") window.open(data.webData.url, "_blank");
     else {
       navigate(data.webData.url);
+      window.scrollTo({top: 0})      
     }
   };
 
