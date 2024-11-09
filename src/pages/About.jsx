@@ -4,7 +4,7 @@ import styles from './About.module.css'
 import img1 from '../imgs/edited1.jpg'
 import Timeline from "../Components/Timeline";
 import Scroll from "../UI/Scroll";
-import { MobileNavContext } from "../App";
+import {useMobileContext} from '../Components/ContextHolder'
 
 const DESC =
   `Hello! I’m Tedo, a passionate front-end React developer 
@@ -57,7 +57,7 @@ const TIMELINE_DATA =
   ]
 
 const About = () => {
-  const {mobileNavActive} = useContext(MobileNavContext)
+  const {mobileNavActive} = useMobileContext();
   
   return (
     <div>

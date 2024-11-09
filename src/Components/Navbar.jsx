@@ -1,16 +1,17 @@
 import styles from "./Navbar.module.css";
 import Nav from "./Nav";
 import { useLocation } from "react-router-dom";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import DropNavbar from "./DropNavbar";
 import { HiBars3 } from "react-icons/hi2";
-import { MobileNavContext } from "../App";
+import {useMobileContext} from './ContextHolder'
+
 
 const Navbar = () => {
   const location = useLocation();
   const [mobile, setMobile] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false)
-  const {setMobileNavActive} = useContext(MobileNavContext)
+  const {setMobileNavActive} = useMobileContext();
 
   useEffect(() => {
     // initial state change

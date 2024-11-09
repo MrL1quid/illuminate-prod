@@ -6,10 +6,10 @@ import hsp4 from "../imgs/3.jpg";
 import styles from "./Home.module.css";
 import SubPage from "../Components/SubPage";
 import Scroll from "../UI/Scroll";
-import { MobileNavContext } from "../App";
+import {useMobileContext} from '../Components/ContextHolder'
 
 const Home = () => {
-  const {mobileNavActive} = useContext(MobileNavContext)
+  const {mobileNavActive} = useMobileContext();
 
   return (
     <>

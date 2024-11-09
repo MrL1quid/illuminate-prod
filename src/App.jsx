@@ -11,20 +11,17 @@ import UniMain from "./projects/Uni/UniMain";
 import CVMain from "./projects/CV/CVMain";
 import Contact from "./pages/Contact";
 import "./General.css";
-import { createContext, useState } from "react";
-
-export const MobileNavContext = createContext();
+import ContextHolder from "./Components/ContextHolder";
 
 function App() {
   const location = useLocation();
-  const [mobileNavActive, setMobileNavActive] = useState(false);
 
   return (
     <>
       {!location.pathname.startsWith("/projects/") ||
-      location.pathname === "/projects/" ? (
+        location.pathname === "/projects/" ? (
         <div className={styles.mainApp}>
-          <MobileNavContext.Provider value={{mobileNavActive, setMobileNavActive}}>
+          <ContextHolder>
             <Loader />
             <Navbar />
             <Routes>
@@ -35,7 +32,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
-          </MobileNavContext.Provider>
+          </ContextHolder>
         </div>
       ) : (
         ""
