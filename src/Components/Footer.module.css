@@ -67,6 +67,17 @@ a.active {
 
 }
 @media only screen and (max-width: 768px) {    
-    
-
+    .footer{
+        flex-direction: column;
+    }
+    .logo-holder button{
+        font-size: 3vh;
+        border-radius: 50%;
+    }
+    .logo-holder> div{
+        margin: 2vh auto;
+    }
+    .fnav{
+        display: none;
+    }
 }

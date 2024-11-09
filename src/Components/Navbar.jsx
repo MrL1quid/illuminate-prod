@@ -10,7 +10,7 @@ const Navbar = () => {
   const location = useLocation();
   const [mobile, setMobile] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false)
-  const {setMobileNav} = useContext(MobileNavContext)
+  const {setMobileNavActive} = useContext(MobileNavContext)
 
   useEffect(() => {
     // initial state change
@@ -28,9 +28,14 @@ const Navbar = () => {
   }, []);
 
   useEffect(()=>{
-    mobileMenu ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll')
-    setMobileNav(mobileMenu)
+    mobileMenu ? document.body.classList.add('no-scroll') : document.body.classList.remove('no-scroll');
+    // setLastScrollPos(window.scrollY);
+    setMobileNavActive(mobileMenu)
   },[mobileMenu])
+  
+  const closeHandler = ()=> {
+    setMobileMenu(false)
+  }
 
   return (
     <div className={styles.nav}>
@@ -60,8 +65,8 @@ const Navbar = () => {
           </>
         ) : (
           <>
-          <button className={styles.mobileBtn} onClick={()=>setMobileMenu(true)}><HiBars3/></button>
-          <DropNavbar active={mobileMenu} disableFunc={()=>setMobileMenu(false)}/>
+            <button className={styles.mobileBtn} onClick={()=>setMobileMenu(true)}><HiBars3/></button>
+            <DropNavbar active={mobileMenu} disableFunc={closeHandler}/>
           </>
         )}
       </div>

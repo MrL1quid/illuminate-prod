@@ -24,7 +24,7 @@ function App() {
       {!location.pathname.startsWith("/projects/") ||
       location.pathname === "/projects/" ? (
         <div className={styles.mainApp}>
-          <MobileNavContext.Provider value={{mobileNavActive, setMobileNav: (v)=>setMobileNavActive(v)}}>
+          <MobileNavContext.Provider value={{mobileNavActive, setMobileNavActive}}>
             <Loader />
             <Navbar />
             <Routes>
