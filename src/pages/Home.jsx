@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import hsp1 from "../imgs/6.jpg";
 import hsp2 from "../imgs/7.jpg";
 import hsp3 from "../imgs/9.jpg";
@@ -6,14 +6,13 @@ import hsp4 from "../imgs/3.jpg";
 import styles from "./Home.module.css";
 import SubPage from "../Components/SubPage";
 import Scroll from "../UI/Scroll";
-import {useMobileContext} from '../Components/ContextHolder'
+import { useMobileContext } from '../Components/ContextHolder'
 
 const Home = () => {
-  const {mobileNavActive} = useMobileContext();
 
   return (
     <>
-      {!mobileNavActive && <Scroll/>}
+      <Scroll/>
       <section className={styles.page}>
         <div className={styles["bg"]} />
         <h1>WEB SOLUOR</h1>

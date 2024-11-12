@@ -1,10 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import SubPage from "../Components/SubPage";
 import styles from './About.module.css'
 import img1 from '../imgs/edited1.jpg'
 import Timeline from "../Components/Timeline";
 import Scroll from "../UI/Scroll";
-import {useMobileContext} from '../Components/ContextHolder'
 
 const DESC =
   `Hello! I’m Tedo, a passionate front-end React developer 
@@ -57,11 +56,10 @@ const TIMELINE_DATA =
   ]
 
 const About = () => {
-  const {mobileNavActive} = useMobileContext();
   
   return (
     <div>
-      {!mobileNavActive && <Scroll/>}
+      <Scroll/>
       <SubPage description={DESC} title='ABOUT ME' textAlign='left' addStyles={styles.subpage} img={img1}/>
       <Timeline data={TIMELINE_DATA}/>
     </div>
