@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <div className={styles.nav}>
       <div className={styles["logo"]}>
-        <h3>WEB SOLUOR</h3>
+        <h3>ILLUMINATE</h3>
       </div>
       <div className={styles["navs"]}>
         {!mobile ? (

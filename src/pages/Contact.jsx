@@ -17,9 +17,9 @@ const Contact = () => {
       </div>
       <div className={styles.contactInfo}>
         <h1>CONTACT ME</h1>
-        <ContactLine icon={<IoIosMail/>} text='gudwebsites933@gmail.com'/>
+        <ContactLine icon={<IoIosMail/>} text='twolf957@gmail.com'/>
         <ContactLine icon={<FaLinkedin/>} text='Tedo Bekauri'/>
-        <ContactLine icon={<FaPhoneAlt/>} text='+995 552 53 43 33'/>
+        <ContactLine icon={<FaPhoneAlt/>} text='+995 xxx xx xx xx'/>
       </div>
     </div>
   );

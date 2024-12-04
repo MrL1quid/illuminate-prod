@@ -6,7 +6,6 @@ import hsp4 from "../imgs/3.jpg";
 import styles from "./Home.module.css";
 import SubPage from "../Components/SubPage";
 import Scroll from "../UI/Scroll";
-import { useMobileContext } from '../Components/ContextHolder'
 
 const Home = () => {
 
@@ -15,7 +14,7 @@ const Home = () => {
       <Scroll/>
       <section className={styles.page}>
         <div className={styles["bg"]} />
-        <h1>WEB SOLUOR</h1>
+        <h1>ILLUMINATE</h1>
         <h2>OFFERING WEB DEVELOPMENT SERVICES TO THE USERS</h2>
       </section>
       <SubPage

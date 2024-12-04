@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={styles["logo-holder"]}>
-        <h3>WEB SOLUOR</h3>
+        <h3>ILLUMINATE</h3>
         <div>
           <button onClick={()=> btnhandler('https://www.linkedin.com/in/tedo-bekauri-707a05271')}><FaLinkedin/></button>
           <button onClick={emailHandler}><IoMdMail/></button>
@@ -30,7 +30,7 @@ const Footer = () => {
         <Link to={"/projects"} onClick={window.scrollTo({top: 0})} className={location.pathname === '/projects' ? styles.active : ''}>PROJECTS</Link>
         <Link to={"/contact"} onClick={window.scrollTo({top: 0})} className={location.pathname === '/contact' ? styles.active : ''}>CONTACT</Link>
       </div>
-      <p>&copy; Soluor - All rights reserved.</p>
+      <p>&copy; ILLUMINATE - All rights reserved.</p>
     </div>
   );
 };
