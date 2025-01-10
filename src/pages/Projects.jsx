@@ -32,7 +32,7 @@ const Projects = () => {
       <div className={styles.content}>
         <ProjectCard
           src={img1}
-          title={"advokatbekauri.com"}
+          title={"advokatbekauri.ru"}
           onClick={dataSetter}
           id={0}
         />

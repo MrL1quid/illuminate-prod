@@ -35,12 +35,12 @@ const [multiPageApp, verticalNav, responsive, emailContactForm, usingRedux, usin
 
 export default [
   {
-    title: "advokatbekauri.com",
+    title: "advokatbekauri.ru",
     desc: "This is the first website made by me that was put on the internet. It was made for my father, a lawyer currently working in Russia.",
     features: [verticalNav, multiPageApp, responsive, emailContactForm],
     webData: {
       type: 'LINK',
-      url: 'https://advokatbekauri.com'
+      url: 'https://advokatbekauri.ru'
     },
   },
   { 
